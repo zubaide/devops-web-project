@@ -2,22 +2,23 @@
 
 <servers>
   <server>
-    <id>devops-web-app-devops-web-app</id>
+    <id>devops-devops-cicd</id>
     <username>aws</username>
     <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
   </server>
 </servers>
 
-<profiles>
+
+ <profiles>
   <profile>
-    <id>devops-web-app-devops-web-app</id>
+    <id>devops-devops-cicd</id>
     <activation>
       <activeByDefault>true</activeByDefault>
     </activation>
     <repositories>
       <repository>
-        <id>devops-web-app-devops-web-app</id>
-        <url>https://devops-web-app-010438508372.d.codeartifact.ap-southeast-1.amazonaws.com/maven/devops-web-app/</url>
+        <id>devops-devops-cicd</id>
+        <url>https://devops-010438508372.d.codeartifact.ap-southeast-1.amazonaws.com/maven/devops-cicd/</url>
       </repository>
     </repositories>
   </profile>
@@ -25,9 +26,9 @@
 
 <mirrors>
   <mirror>
-    <id>devops-web-app-devops-web-app</id>
-    <name>devops-web-app-devops-web-app</name>
-    <url>https://devops-web-app-010438508372.d.codeartifact.ap-southeast-1.amazonaws.com/maven/devops-web-app/</url>
+    <id>devops-devops-cicd</id>
+    <name>devops-devops-cicd</name>
+    <url>https://devops-010438508372.d.codeartifact.ap-southeast-1.amazonaws.com/maven/devops-cicd/</url>
     <mirrorOf>*</mirrorOf>
   </mirror>
 </mirrors>
